@@ -41,6 +41,7 @@
 ## 支持平台
 <font color=red>（研发补充，下方为示例）
 目前运行的操作系统平台如下：
+
 - 操作系统：Linux</font>
 
 ## 支持语言
@@ -50,7 +51,7 @@
 后端：Python 2.7
 </font>
 
-##在线体验
+## 在线体验
 点击注册体验所有免费功能：https://aiops.yz-intelligence.com/eventbank/register
 
 ##开始使用
@@ -60,18 +61,19 @@
 3、 开发指南，用于指导开发者如何在我们平台上开发功能或插件，研发评估是否有需要
 </font>
 
-##License
+## License
 基于AGPL3.0，详见[lincese](http://test.com "lincese")<font color=red>研发更新地址</font>
 
-##贡献指南
+## 贡献指南
+
 我们希望对此项目有兴趣的专业人士踊跃参与，提出您宝贵的建议，共同维护项目，期待你的加入。
 
 如果您在使用过程中发现问题，请通过https://github.com/**** /issues<font color=red>研发更新地址</font>来提交并描述相关的问题，您可以在这里查看问题的解答情况，或其他人提交的问题详情。
 
 如果您是第一次贡献代码，请阅读[CONTRIBUTING](http://test.com "CONTRIBUTING")<font color=red>研发更新地址</font>了解我们的提交流程。
 
+## 联系方式
 
-##联系方式
 在使用过程中有任何问题，欢迎加入我们的技术交流微信群沟通。
 【微信群二维码】
 
