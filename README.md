@@ -1,23 +1,29 @@
-【维鹰云LOGO】
+![维鹰云](https://github.com/yz-intelligence/WeiyingCloud/blob/main/weiyingcloud_wiki/images/logo.png)
+
 ## 产品介绍
 
 访问 维鹰云产品官网（https://aiops.yz-intelligence.com/portal/） 了解产品完整信息。
 
 智能事件平台是一款依托人工智能和大数据技术，将各种云平台或监控工具产生的运维告警信息统一进行接收、降噪、分析、转派、处理的事件全生命周期管理产品，让运维团队彻底告别告警风暴。
 
+
+
 ## 产品背景
 
 在支撑腾讯互动娱乐国际事业部（IEGG）项目运维过程中，维鹰云运维团队发现项目存在以下几个痛点问题：涉及的云资源和监控平台数量众多，缺少统一管理平台；告警信息未能有效降噪分类；告警风暴淹没高危告警信息等。在实际解决这些问题过程中，维鹰云与IEGG团队共建了一套成熟的事件管理体系。经过实践验证，在IEGG项目中，告警降噪率最高达到`91%`，各项性能指标均满足运维要求。
 
+
+
 ## 产品理念
 
 用AI赋能传统运维，以场景为导向，解决企业运维过程中资源数据保鲜难、资源成本控制难、应用调用关系绘制难、应用异常发现不及时以及告警风暴等问题，为业务系统连续性保驾护航。智能事件平台对异常检测产生的告警事件信息进行统一降噪与管理。
-【产品结构图】
+![产品架构](https://github.com/yz-intelligence/WeiyingCloud/blob/main/weiyingcloud_wiki/images/structure.png)
 
-##产品特点
+## 产品特点
+
 针对事件全生命周期进行设计，包括：事件接入->事件分析/分类->事件预警->事件管理。
 
-- 多监控源接入：支持国内Zabbix、Prometheus、腾讯云、阿里云、华为云、金山云、百度智能云、蓝鲸智云、微软云、亚马逊云、谷歌云等常见云平台/监控工具接入，也支持通过 syslog, snmptrap, http，jdbc等方式接入。
+- 多监控源接入：支持国内Zabbix、Prometheus、腾讯云、阿里云、华为云、金山云、百度智能云、蓝鲸智云、微软云、亚马逊云、谷歌云等常见云平台/监控工具接入。
 - 事件降噪：支持规则+算法的双重降噪，其中算法降噪包含的智能降噪和降噪阈值推荐暂不开源。
 - 事件订阅：支持按需灵活地进行事件订阅设置，支持邮件、短信、企业微信、Webhook等多种通知方式； 
 - 事件处理：支持对告警事件进行操作和处理，包括响应、备注、转派、合并、查看、关闭等； 
@@ -26,7 +32,8 @@
 - 移动事件管理：支持企业微信、企业微信群、钉钉等移动应用接入，并且可以在移动端接收、查看、处理事件，支持移动事件报表。
 
 ## 系统架构
-【系统架构图】
+
+![系统架构图](https://github.com/yz-intelligence/WeiyingCloud/blob/main/weiyingcloud_wiki/images/structure2.png)
 
 1.  `nginx `：智能事件平台交互入口；接收客户端访问请求，如果请求静态资源，返回静态资源文件。如请求动态服务，转发到event-portal。如为事件接入，转发到event-broker。
 2.  `event-broker `：主要解析和转换事件告警。
@@ -39,30 +46,28 @@
 9.  `kafka `：提供消息存储和中转。
 
 ## 支持平台
-<font color=red>（研发补充，下方为示例）
-目前运行的操作系统平台如下：
 
-- 操作系统：Linux</font>
+- 支持全平台部署
 
 ## 支持语言
-<font color=red>（研发补充，下方为示例）
-目前前后端支持的开发语言如下：
-前端：JavaScript、TypeScript
-后端：Python 2.7
-</font>
+
+- 前端：JavaScript、TypeScript
+- 后端：Java
 
 ## 在线体验
+
 点击注册体验所有免费功能：https://aiops.yz-intelligence.com/eventbank/register
 
-##开始使用
-<font color=red>（研发提供）
-1、 安装指南，可另外附上md文件链接
-2、 使用指南，另外附上用户操作手册链接（已有）
-3、 开发指南，用于指导开发者如何在我们平台上开发功能或插件，研发评估是否有需要
-</font>
+## 开始使用
+
+1、如何编译：[《维鹰云智能事件平台编译指南》](https://github.com/yz-intelligence/WeiyingCloud/blob/main/weiyingyun_compile_guide.md "《维鹰云智能事件平台编译指南》")
+2、如何部署：[《维鹰云智能事件平台部署指南》](https://github.com/yz-intelligence/WeiyingCloud/blob/main/weiyingyun_installation_standalone_mode_on_premises.md "《维鹰云智能事件部署指南》")
+3、如何使用：[《维鹰云智能事件平台帮助文档》](https://docs.qq.com/doc/DTU1RSVZwbmF6eXlj "《维鹰云智能事件平台帮助文档》")
+
 
 ## License
-基于AGPL3.0，详见[lincese](http://test.com "lincese")<font color=red>研发更新地址</font>
+
+基于AGPL3.0，详见[lincese](https://github.com/yz-intelligence/WeiyingCloud/blob/main/LICENSE "lincese").
 
 ## 贡献指南
 
@@ -72,9 +77,8 @@
 
 如果您是第一次贡献代码，请阅读[CONTRIBUTING](http://test.com "CONTRIBUTING")<font color=red>研发更新地址</font>了解我们的提交流程。
 
+
 ## 联系方式
 
 在使用过程中有任何问题，欢迎加入我们的技术交流微信群沟通。
-【微信群二维码】
-
-
+![qrcode](https://github.com/yz-intelligence/WeiyingCloud/blob/main/weiyingcloud_wiki/images/qrcode.png)
