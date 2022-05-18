@@ -75,9 +75,9 @@
 
 我们希望对此项目有兴趣的专业人士踊跃参与，提出您宝贵的建议，共同维护项目，期待你的加入。
 
-如果您在使用过程中发现问题，请通过[GitHub Issues](https://github.com/yz-intelligence/WeiyingCloud/issues)来提交并描述相关的问题，您可以在这里查看问题的解答情况，或其他人提交的问题详情（提交前请阅读[ISSUES指南](https://github.com/yz-intelligence/WeiyingCloud/ISSUES.md)）。
+如果您在使用过程中发现问题，请通过[GitHub Issues](https://github.com/yz-intelligence/WeiyingCloud/issues)来提交并描述相关的问题，您可以在这里查看问题的解答情况，或其他人提交的问题详情（提交前请阅读[ISSUES指南](https://github.com/yz-intelligence/WeiyingCloud/blob/main/ISSUES.md)）。
 
-如果您是第一次贡献代码，请阅读[CONTRIBUTING](https://github.com/yz-intelligence/WeiyingCloud/Contributing.md "CONTRIBUTING")<font color=red>研发更新地址</font>了解我们的提交流程。
+如果您是第一次贡献代码，请阅读[CONTRIBUTING](https://github.com/yz-intelligence/WeiyingCloud/blob/main/Contributing.md "CONTRIBUTING")了解我们的提交流程。
 
 
 ## 联系方式
