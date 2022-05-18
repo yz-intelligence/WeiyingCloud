@@ -61,7 +61,9 @@
 ## 开始使用
 
 1、如何编译：[《维鹰云智能事件平台编译指南》](https://github.com/yz-intelligence/WeiyingCloud/blob/main/weiyingyun_compile_guide.md "《维鹰云智能事件平台编译指南》")
+
 2、如何部署：[《维鹰云智能事件平台部署指南》](https://github.com/yz-intelligence/WeiyingCloud/blob/main/weiyingyun_installation_standalone_mode_on_premises.md "《维鹰云智能事件部署指南》")
+
 3、如何使用：[《维鹰云智能事件平台帮助文档》](https://docs.qq.com/doc/DTU1RSVZwbmF6eXlj "《维鹰云智能事件平台帮助文档》")
 
 
