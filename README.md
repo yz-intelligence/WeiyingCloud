@@ -77,7 +77,7 @@
 
 如果您在使用过程中发现问题，请通过https://github.com/**** /issues<font color=red>研发更新地址</font>来提交并描述相关的问题，您可以在这里查看问题的解答情况，或其他人提交的问题详情。
 
-如果您是第一次贡献代码，请阅读[CONTRIBUTING](http://test.com "CONTRIBUTING")<font color=red>研发更新地址</font>了解我们的提交流程。
+如果您是第一次贡献代码，请阅读[CONTRIBUTING](https://github.com/yz-intelligence/WeiyingCloud/Contributing.md "CONTRIBUTING")<font color=red>研发更新地址</font>了解我们的提交流程。
 
 
 ## 联系方式
