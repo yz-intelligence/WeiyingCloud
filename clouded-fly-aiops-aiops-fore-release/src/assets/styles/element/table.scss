@@ -1,0 +1,87 @@
+th {
+  font-weight: 400;
+}
+.el-input__inner {
+  color: #333;
+}
+
+.el-table {
+  color: #333;
+  thead {
+    color: #000;
+    font-weight: 400;
+  }
+  th {
+    background-color: #f6f7fb;
+    &.el-table__cell > .cell {
+      display: inline-flex;
+      align-items: center;
+    }
+  }
+  th,td {
+    padding: 8px 0;
+  }
+  .el-table__cell{
+    &.is-center .cell {
+      justify-content: center;
+    }
+    &.is-left .cell {
+      justify-content: flex-start;
+    }
+    &.is-right .cell {
+      justify-content: flex-end;
+    }
+  }
+  .caret-wrapper {
+    top: 1px;
+  }
+  // .cell {
+  //   line-height: unset;
+  // }
+}
+.el-table__expanded-cell[class*=cell] {
+  padding: 20px 50px;
+}
+// 统一表格高度为56，
+.el-table__row {
+  height: 56px;
+}
+.el-table--small {
+  font-size: 14px;
+  .el-table__row {
+    height: 48px;
+  }
+}
+.el-table--mini {
+  .el-table__row {
+    height: 40px;
+  }
+}
+.el-tabs__item {
+  height: 56px;
+  line-height: 56px;
+}
+.el-tabs__nav-wrap::after {
+  height: 1px;
+}
+.el-tabs__active-bar {
+  height: 1px;
+}
+.el-table__row.expanded + tr {
+  background-color: #f4f6fa;
+}
+.el-table__expanded-cell {
+  background-color: #f4f6fa;
+}
+.el-table__expand-icon {
+  font-size: 18px;
+}
+.el-table__expand-icon > .el-icon {
+  margin-top: 0;
+  margin-left: -8px;
+  transform: translateY(-50%);
+}
+// hack 表格fixed 状态下 下拉菜单重复bug
+.real-time-menu-header + .real-time-menu-header {
+  transform: scale(0);
+}

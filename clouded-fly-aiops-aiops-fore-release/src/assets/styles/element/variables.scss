@@ -1,0 +1,15 @@
+/* 改变主题色变量 */
+
+$--color-primary: #0076FF; // 主色
+$--color-success: #02C58D; // 成功
+$--color-warning: #F7B500; // 警告
+$--color-danger: #E85254;  // 危险
+$layout-color: #f4f6fa;
+$--color-text-placeholder: #c6c6c6; // placeholder
+$--color-text-primary: #333; // 文字主色
+$--color-text-regular: #666; // 常规文字
+$--color-text-secondary: #999; // 常规文字
+$--border-color-base: #d8d8d8;
+$--dropdown-menuItem-hover-color: $--color-primary;
+$--table-header-background-color: #f6f7fb;
+@import url('./component-style.scss');

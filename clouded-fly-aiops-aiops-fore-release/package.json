@@ -1,0 +1,78 @@
+{
+  "name": "win-cloud",
+  "version": "1.2.6",
+  "description": "维鹰云事件平台",
+  "scripts": {
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint",
+    "commit": "git-cz",
+    "dev": "vue-cli-service serve",
+    "dev:prod": "vue-cli-service serve --mode production",
+    "dev:stage": "vue-cli-service serve --mode staging",
+    "release": "standard-version"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "babel-polyfill": "^6.26.0",
+    "core-js": "^3.6.5",
+    "dayjs": "^1.10.6",
+    "echarts": "^5.1.2",
+    "element-ui": "2.15.7",
+    "intro.js": "^4.1.0",
+    "lodash": "^4.17.21",
+    "nprogress": "^0.2.0",
+    "vddl": "^0.7.1",
+    "vue": "^2.6.11",
+    "vue-introjs": "^1.3.2",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.3",
+    "@vue/cli-plugin-eslint": "~5.0.3",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-unit-jest": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~5.0.3",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/test-utils": "^1.0.3",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "git-cz": "^4.7.6",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.1.1",
+    "mockjs": "^1.1.0",
+    "prettier": "^2.4.1",
+    "sass": "^1.34.0",
+    "sass-loader": "^10.1.1",
+    "standard-version": "^9.3.1",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,vue}": [
+      "vue-cli-service lint",
+      "git add"
+    ],
+    "src/**/*.{js,vue,css,scss,less,html}": [
+      "prettier --no-semi --single-quote --write",
+      "git add"
+    ]
+  }
+}

@@ -1,0 +1,204 @@
+body div.introjs-overlay {
+  // z-index: 2000 !important;
+  background: radial-gradient(center, ellipse farthest-corner, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.9) 100%);
+}
+.introjs-tooltip {
+  color: #fff;
+  background: #0076ff !important;
+  border-radius: 8px;
+  min-width: 300px !important;
+  .introjs-helperNumberLayer {
+    position: absolute;
+    left: 20px;
+    bottom: 8px;
+    color: #eaeaea;
+  }
+}
+.introjs-button,
+.introjs-button:hover,
+.introjs-button:focus,
+.introjs-button:active,
+.introjs-disabled,
+.introjs-disabled:focus,
+.introjs-disabled:hover {
+  outline: none;
+  background-image: none;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+.introjs-button:hover,
+.introjs-button:focus,
+.introjs-button:active {
+  border: 1px solid #fff;
+}
+.introjs-disabled,
+.introjs-disabled:focus,
+.introjs-disabled:hover {
+  color: #ccc;
+  border: 1px solid transparent;
+}
+.hideBtn .introjs-helperNumberLayer {
+  position: relative !important;
+  left: auto;
+  bottom: auto;
+}
+.introjs-tooltiptext {
+  font-size: 16px;
+}
+.introjs-arrow.top,
+.introjs-arrow.top-middle,
+.introjs-arrow.top-right {
+  border-color: transparent transparent rgba(0, 118, 255) !important;
+}
+.introjs-arrow.right,
+.introjs-arrow.right-bottom {
+  border-color: transparent transparent transparent rgba(0, 118, 255) !important;
+}
+.introjs-arrow.bottom,
+.introjs-arrow.bottom-middle,
+.introjs-arrow.bottom-right {
+  border-color: rgba(0, 118, 255) transparent transparent !important;
+}
+.introjs-tooltipReferenceLayer {
+  width: 100%;
+}
+.introjs-skipbutton {
+  display: none !important;
+}
+.introjs-tooltipbuttons {
+  border-top: 0 !important;
+  display: flex;
+  justify-content: flex-end;
+  .introjs-button {
+    box-shadow: none;
+    text-shadow: none;
+    font-family: inherit;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    transition: color 0.2s linear, background-color 0.2s linear, border 0.2s linear, box-shadow 0.2s linear;
+    color: #515a6e !important;
+    background-color: #fff;
+    border-color: #dcdee2;
+
+    &:hover,
+    &:active,
+    &:focus,
+    &:visited {
+      box-shadow: none;
+      text-shadow: none;
+      color: #0076ff !important;
+      background-color: #fff;
+      border-color: #0076ff;
+    }
+
+    &.introjs-disabled {
+      color: #bbbec4;
+      background-color: #f7f7f7;
+      border-color: #dddee1;
+      cursor: not-allowed;
+    }
+  }
+  .introjs-prevbutton {
+    margin-right: 10px;
+    color: #fff !important;
+    background-color: #0076ff;
+    border-color: #0076ff;
+    &:hover,
+    &:active,
+    &:visited {
+      color: #fff !important;
+      background-color: #57a3f3;
+      border-color: #57a3f3;
+    }
+    &:focus {
+      color: #fff !important;
+      background-color: #0076ff;
+      border-color: #0076ff;
+    }
+  }
+}
+
+.introjs-helperLayer {
+  box-shadow: rgb(0 118 255 / 80%) 0px 0px 1px 2px, rgb(33 33 33 / 50%) 0px 0px 0px 5000px !important;
+}
+.hideBtn .introjs-tooltipbuttons,
+.hideDoneBtn .introjs-donebutton,
+.hideSkipBtn .introjs-skipbutton,
+.hidePrevBtn .introjs-prevbutton,
+.hideNextBtn .introjs-nextbutton {
+  display: none !important;
+}
+
+.showNextBtn .introjs-nextbutton {
+  position: relative;
+  overflow: visible;
+  display: inline-block;
+  padding: 0.5em 0.8em;
+  box-shadow: 0 2px 0px 0px #0076ff;
+  margin: 0;
+  background: #0076ff;
+  text-decoration: none;
+  font: 11px / normal sans-serif;
+  color: #fff !important;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none !important;
+  -webkit-background-clip: padding;
+
+  &:hover {
+    color: #fff !important;
+    background: #0076ff;
+    text-decoration: none;
+    box-shadow: 0 2px 0px 0px #0076ff;
+  }
+}
+
+// .pageEnd {
+//   .introjs-tooltipbuttons {
+//     display: flex;
+//     justify-content: center;
+//     .introjs-skipbutton {
+//       order: 1;
+//       margin-left: 5px;
+//       margin-right: 0;
+//     }
+//   }
+// }
+
+.introjs-overlay.introjs-modal {
+  position: absolute !important;
+  opacity: 1 !important;
+  z-index: auto !important;
+}
+.introjs-overlay {
+  & ~ .el-message-box__wrapper {
+    z-index: 100000001 !important;
+  }
+  & ~ .el-message-box__wrapper ~ .v-modal {
+    z-index: 100000000 !important;
+  }
+}
+.isDialog {
+  & ~ .v-modal {
+    z-index: 2001 !important;
+  }
+}
+// .hideHelper {
+//   z-index: 2000 !important;
+//   opacity: 0;
+// }
+.test-lose {
+  z-index: 100000001 !important;
+  & ~ .v-modal {
+    z-index: 100000000 !important;
+  }
+}
+.fixed-guide-custom {
+  z-index: auto !important;
+}

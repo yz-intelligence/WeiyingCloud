@@ -1,0 +1,248 @@
+$color-rec: #02C58D;
+$color-info: #0076FF;
+$color-warn: #EFE041;
+$color-error: #F7B500;
+$color-accd: #E85254;
+$color-other: #23C1EB;
+
+// 事件级别颜色
+.color-rec {
+  background-color: $color-rec !important;
+  color: #fff !important;
+}
+.color-info {
+  background-color: $color-info !important;
+  color: #fff !important;
+}
+.color-warn {
+  background-color: $color-warn !important;
+  color: #fff !important;
+}
+.color-error {
+  background-color: $color-error !important;
+  color: #fff !important;
+}
+.color-accd {
+  background-color: $color-accd !important;
+  color: #fff !important;
+}
+.color-other {
+  background-color: $color-other !important;
+  color: #fff !important;
+}
+
+.chip {
+  background: #e0e0e0;
+  color: rgba(0,0,0,.87);
+}
+
+.chip, .chip .chip__content {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.chip {
+  border-radius: 28px;
+  border: 1px solid transparent;
+  font-size: 13px;
+  margin: 4px;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: .3s cubic-bezier(.25,.8,.5,1);
+  -o-transition: .3s cubic-bezier(.25,.8,.5,1);
+  transition: .3s cubic-bezier(.25,.8,.5,1);
+}
+
+.chip .chip__content {
+  border-radius: 28px;
+  cursor: inherit;
+  height: 32px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 12px;
+  white-space: nowrap;
+  //z-index: 1;
+}
+
+.chip .avatar {
+  height: 32px;
+  margin-left: -12px;
+  margin-right: 8px;
+  min-width: 32px;
+  width: 32px;
+}
+
+.avatar {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.chip--small, .chip--small .chip__content {
+  height: 26px;
+}
+.chip--small .avatar {
+  height: 26px;
+  min-width: 26px;
+  width: 26px;
+}
+.chip--small .icon {
+  font-size: 20px;
+}
+
+.chip--xs, .chip--xs .chip__content {
+  height: 20px;
+  font-size: 12px;
+}
+.chip--xs .avatar {
+  height: 20px;
+  min-width: 20px;
+  width: 20px;
+}
+.chip--xs .icon {
+  font-size: 16px;
+}
+
+.chip--active:not(.chip--disabled), .chip--selected:not(.chip--disabled), .chip:focus:not(.chip--disabled) {
+  border-color: rgba(0,0,0,.13);
+  -webkit-box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.chip--active:not(.chip--disabled):after, .chip--selected:not(.chip--disabled):after, .chip:focus:not(.chip--disabled):after {
+  background: currentColor;
+  border-radius: inherit;
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  -webkit-transition: inherit;
+  -o-transition: inherit;
+  transition: inherit;
+  width: 100%;
+  pointer-events: none;
+  opacity: .13;
+}
+
+.chip.chip--outline {
+  background: transparent!important;
+  border-color: currentColor;
+  color: inherit !important;
+}
+.circle {
+  display: inline-block;
+  min-width: 18px;
+  height: 18px;
+  line-height: 18px;
+  padding: 0 5px;
+  border-radius: 18px;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  margin-right: 12px;
+  background-color: #8C8C8C;
+  box-sizing: border-box;
+  &-acci {
+    background-color: $color-accd;
+  }
+  &-error {
+    background-color: $color-error;
+  }
+  &-warn {
+    background-color: $color-warn;
+  }
+  &-info {
+    background-color: $color-info;
+  }
+  &-other {
+    background-color: $color-other;
+  }
+  &-rec {
+    background-color: $color-rec;
+  }
+}
+.hoverable:hover:before {
+  transform: scale3d(1.2, 1.2, 1.2);
+}
+
+.hoverable {
+  position: relative;
+  display: inline-block;
+  min-width: 24px;
+  height: 24px;
+  line-height: 24px;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+}
+.hoverable:before {
+  left: 0;
+  top: 0;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: scale3d(0, 0, 0);
+  transition: all;
+  transition-duration: 250ms;
+  backface-visibility: hidden;
+  background-color: currentColor;
+  z-index: 0;
+  border-radius: 50%;
+  opacity: 0.12;
+}
+
+.circle-input {
+  width: 24px;
+  transition: all 0.5s cubic-bezier(0, 0.105, 0.035, 1.57);
+  color: #0076FF;
+  i.ivu-icon {
+    color: inherit;
+    font-size: 18px !important;
+
+    transition: all 0.5s;
+  }
+
+  input {
+    border-radius: 24px;
+    opacity: 0;
+    padding-right: 0 !important;
+
+    transition: all 0.5s;
+  }
+}
+
+.circle-input.active {
+  width: 200px;
+  i {
+    color: #80848f;
+  }
+  input {
+    opacity: 1;
+    padding-right: 32px;
+  }
+}
+.red {
+  background-color: $color-accd!important;
+  border-color: $color-accd!important;
+}
+.green {
+  background-color: $color-rec!important;
+  border-color: $color-rec!important;
+}
+.light-blue {
+  background-color: $color-info!important;
+  border-color: $color-info!important;
+}

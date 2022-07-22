@@ -1,0 +1,7 @@
+// flex 相关
+@mixin flex($main:center, $cross:center, $direction: row) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $main;
+    align-items: $cross;
+  }

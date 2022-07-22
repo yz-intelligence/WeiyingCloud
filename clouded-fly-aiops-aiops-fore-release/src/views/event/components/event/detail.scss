@@ -1,0 +1,25 @@
+.expand {
+  padding: 0 24px;
+  background-color: #fff;
+  &-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 16px;
+    font-size: 14px;
+    &-item {
+      display: flex;
+      padding: 2px 20px 2px 0;
+      width: 50%;
+    }
+    &-label {
+      flex-shrink: 0;
+      margin-right: 20px;
+      width: 70px;
+      color: #8C8C8C;
+      text-align: right;
+    }
+    &-value {
+      word-break: break-all;
+    }
+  }
+}

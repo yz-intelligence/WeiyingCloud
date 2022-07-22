@@ -1,0 +1,204 @@
+@import url('./element/index.scss');
+@import url('./common/intro.scss');
+html {
+  font-size: 14px;
+  box-sizing: border-box;
+  font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+iframe {
+  margin: 0 0;
+  width: 100%;
+  height: 100%;
+}
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+li,
+div,
+p,
+span,
+header,
+nav,
+footer {
+  margin: 0;
+  padding: 0;
+}
+//webkit 滚动条样式
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+  // background-color: $color-background--main;
+  border-radius: 3px;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
+}
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/* 火狐美化滚动条 */
+* {
+  scrollbar-color: rgba(0, 0, 0, 0.3) rgba(0, 0, 0, 0.1);
+  /* 滑块颜色  滚动条背景颜色 */
+  scrollbar-width: thin;
+  /* 滚动条宽度有三种：thin、auto、none */
+}
+
+.page {
+  position: relative;
+  margin: 16px 24px 24px;
+  padding: 0 24px 16px;
+  background-color: #fff;
+  height: auto;
+  border-radius: 8px;
+  &-container {
+    background-color: #f4f6fa;
+    // height: 100%;
+  }
+  &-action {
+    padding: 16px 0;
+    @include flex(flex-end, center);
+  }
+  &-content {
+    position: relative;
+  }
+  &-main {
+    position: relative;
+    padding: 24px 0;
+  }
+}
+
+// 手纸
+.pointer {
+  cursor: pointer;
+}
+
+// vddl拖拽
+.drag-wrap {
+  .el-tag {
+    cursor: move;
+    margin: 2px 8px 4px 0;
+  }
+  .vddl-dragging-source {
+    display: none;
+  }
+  .vddl-placeholder {
+    background: #fff;
+    border: 1px dashed #d8d8d8;
+    display: inline-block;
+    height: 22px;
+    margin: 2px 4px 2px 0;
+    padding: 0 8px;
+    min-width: 40px;
+  }
+}
+
+//页面加载进度条颜色
+#nprogress .bar {
+  background: $--color-primary !important; //自定义颜色
+}
+
+/* 禁用客服进入页面样式 */
+#_QD_INVITE_IFRAME_ID_PREFIX_3009045941 {
+  display: none;
+}
+
+.el-popover {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #ffffff;
+}
+.el-popover[x-placement^='top'] {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #ffffff;
+  .popper__arrow {
+    &:after {
+      border-top-color: rgba(0, 0, 0, 0.75) !important;
+    }
+  }
+}
+.el-tooltip__popper {
+  background-color: rgba(0, 0, 0, 0.75) !important;
+}
+.popover-light {
+  &.el-popover[x-placement^='top'] {
+    background-color: #fff;
+    .popper__arrow {
+      &:after {
+        border-top-color: #fff !important;
+      }
+    }
+  }
+}
+
+// 统一设置分割线间距
+.el-divider--horizontal {
+  margin: 16px 0;
+}
+
+// textarea字体统一
+.el-textarea__inner {
+  font-family: inherit;
+}
+
+// 下拉菜单统一样式
+// .el-select-dropdown__item {
+//   color: #666666;
+// }
+// .el-select-dropdown__item.selected {
+//   color: #666666;
+//   background-color: #f6f6f6;
+// }
+// .el-select-dropdown__item:active {
+//   color: #ffffff !important;
+//   background-color: #0076ff !important;
+// }
+
+// 确认框样式修改
+.el-message-box__header {
+  padding: 0;
+}
+.el-message-box__headerbtn {
+  top: 32px;
+  right: 32px;
+  z-index: 5;
+}
+.el-message-box__content {
+  padding: 10px 32px;
+}
+.el-message-box__btns {
+  padding: 5px 32px 14px;
+}
+
+// 自定义
+.form-swich-margin-right {
+  margin-right: 6px;
+}

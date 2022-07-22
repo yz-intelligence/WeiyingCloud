@@ -1,0 +1,10 @@
+.el-radio__input.is-checked .el-radio__inner {
+  background-color: #fff;
+  &::after {
+    background-color: #0076ff;
+    transform: translate(-50%, -50%) scale(1.9);
+  }
+}
+.el-radio__input.is-disabled.is-checked .el-radio__inner::after {
+  background-color: #d8d8d8;
+}
