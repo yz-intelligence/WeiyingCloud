@@ -60,6 +60,11 @@
 
 ## 开始使用
 
+维鹰云3.0版本部署物料包：
+下载链接：https://wycloud-event-pkg-1259201092.cos.ap-guangzhou.myqcloud.com/3.0/weiyingCloud-oneinstall.tar.gz
+部署服务器要求：
+单机， 最低8c16g， 服务器需可访问外网, 详细操作查看README.md(执行start.sh 按引导安装即可)
+
 1、如何编译：[《维鹰云智能事件平台编译指南》](https://github.com/yz-intelligence/WeiyingCloud/blob/main/weiyingyun_compile_guide.md "《维鹰云智能事件平台编译指南》")
 
 2、如何部署：[《维鹰云智能事件平台部署指南》](https://github.com/yz-intelligence/WeiyingCloud/blob/main/weiyingyun_installation_standalone_mode_on_premises.md "《维鹰云智能事件部署指南》")
