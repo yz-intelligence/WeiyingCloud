@@ -62,6 +62,7 @@
 
 维鹰云3.0版本部署物料包：
 下载链接：https://wycloud-event-pkg-1259201092.cos.ap-guangzhou.myqcloud.com/3.0/weiyingCloud-oneinstall.tar.gz
+
 部署服务器要求：
 单机， 最低8c16g， 服务器需可访问外网, 详细操作查看README.md(执行start.sh 按引导安装即可)
 
