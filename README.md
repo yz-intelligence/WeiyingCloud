@@ -90,6 +90,6 @@
 
 在使用过程中有任何问题，欢迎加入维鹰运维人客栈微信群沟通。
 
-![qrcode](https://github.com/yz-intelligence/WeiyingCloud/blob/main/weiyingcloud_wiki/images/qrcode.png)
+![群二维码](assets/1658571954056.png)
 
 如果二维码失效，请联系维鹰小助手 微信：K2K2XXX
