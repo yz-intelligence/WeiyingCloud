@@ -88,6 +88,6 @@
 
 ## 联系方式
 
-在使用过程中有任何问题，欢迎加入我们的技术交流微信群沟通。
+在使用过程中有任何问题，欢迎加入维鹰运维人客栈微信群沟通。
 
 ![qrcode](https://github.com/yz-intelligence/WeiyingCloud/blob/main/weiyingcloud_wiki/images/qrcode.png)
